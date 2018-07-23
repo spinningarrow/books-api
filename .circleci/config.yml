@@ -19,8 +19,7 @@ jobs:
 
       # Download and cache dependencies
       - restore_cache:
-          key:
-          - dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "package-lock.json" }}
 
       - run: npm install
 
